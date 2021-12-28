@@ -13,7 +13,8 @@
 #   Check Package:             'Cmd + Shift + E'
 #   Test Package:              'Cmd + Shift + T'
 
-hello <- function() {
-  print("Hello, world!")
+hello <- function(x) {
+  x^3
 }
+
 
