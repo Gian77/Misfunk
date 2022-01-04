@@ -17,10 +17,9 @@ filterPhy(physeq, x, type = taxa, keep = TRUE)
   \item{physeq}{a phyloseq objects.}
   \item{x}{a vector containing the list of taxa or samples to be filtered or extracted.}
   \item{type}{either 'taxa' to filter the rows or 'samples' to filter the columns of a phyloseq otu_table(). Default value is 'taxa'.}
-  \item{keep}{logical, items in x will be kept if type is TRUE or discarded if type is FALSE. default value is TRUE. }
+  \item{keep}{logical, items in x will be kept if type is TRUE or discarded if type is FALSE. default value is TRUE.
 }
-%%     ~~Describe \code{x} here~~
-}
+%% ~~Describe \code{x} here~~
 }
 \details{
 
@@ -80,3 +79,4 @@ filterPhy(physeq = propagules_16s,
 % \concept{ ~cpt1 }
 % \concept{ ~cpt2 }
 % Use only one concept per line.
+}
