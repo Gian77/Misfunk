@@ -1,12 +1,12 @@
 \name{filterPhy}
-\alias{filterPhy}
+\alias{filtering phyloseq objects}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Select or drop taxa or samples from a phyloseq object.
 %%  ~~function to do ... ~~
 }
 \description{
-filterPhy allows to select or drop a custom list of taxa or samples form a phyloseq object.
+filterPhy function allows to select or drop a custom list of taxa or samples form a phyloseq object.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
