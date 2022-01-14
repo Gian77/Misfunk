@@ -2,7 +2,10 @@
 \alias{getAbund}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
+<<<<<<< HEAD
 Extract relative abundance by taxonomic rank from a phyloseq object
+=======
+>>>>>>> 94a144b33ca7c1cd22b2d53ebd2af42af89a34aa
 %%  ~~function to do ... ~~
 }
 \description{
@@ -47,3 +50,4 @@ getAbund(x)
 AbundData(physeq_fungi_ev_T1_corn, "Phylum")
 
 }
+
