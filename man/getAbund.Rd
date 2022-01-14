@@ -45,3 +45,5 @@ getAbund(x)
 \examples{
 
 AbundData(physeq_fungi_ev_T1_corn, "Phylum")
+
+}
