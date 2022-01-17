@@ -20,6 +20,12 @@ getAbund <- function(physeq, rank){
       as.vector(otu_physeq)
   tax_physeq <-
       tax_physeq[order(tax_physeq$abundance, decreasing = TRUE),]
+  # formatting
+  rownames(tax_physeq) <-
+    seq(1:nrow(tax_physeq))
+  if (rank == "Phylum"){
+    tax_physeq <- tax_physeq[, c(1:2,8)]
+  }
   return(tax_physeq)
 }
 
