@@ -1,9 +1,12 @@
 getAbund <- function(physeq, rank){
   tax_table(physeq)[tax_table(physeq)==""]<- NA
   tax_table(physeq)[tax_table(physeq)=="unidentified"]<- NA
-  tax_table(physeq)[is.na(tax_table(physeq))]<-"Unclassified"
+  tax_table(physeq)[is.na(tax_table(physeq))] <-"Unclassified"
   tax_table(physeq) <-
-      tax_table(physeq)[, !(colnames(tax_table(physeq)) %in% c("OTU_ID"))]
+      tax_table(physeq)[, (colnames(tax_table(physeq)) %in%
+      c("Kingdom","Phylum","Class","Order","Family","Genus","Species"))]
+  #tax_table(physeq) <-
+  #    tax_table(physeq)[, !(colnames(tax_table(physeq)) %in% c("OTU_ID"))]
   physeq_phylum <-
       tax_glom(physeq, rank)
   otu_physeq <-
