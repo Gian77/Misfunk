@@ -1,7 +1,8 @@
 .Rproj.user
 .Rhistory
-.RData
+.Rdata
 .Ruserdata
 
 # added by me
 propagules.rds
+R/testing.R
